@@ -34,11 +34,19 @@ label.forEach((item) => {
   }
 });
 
-/////////////
-const navList = document.querySelector(".nav-list");
-const siteMap = document.querySelector(".site-map");
+// /////////////
+// const navList = document.querySelector(".nav-list");
+// const siteMap = document.querySelector(".site-map");
 
-// console.log(navList.children);
-Array.from(navList.children).forEach((item) => {
-  siteMap.appendChild(item);
+// // console.log(navList.children);
+// Array.from(navList.children).forEach((item) => {
+//   siteMap.appendChild(item);
+// });
+
+//task -4
+const navList = document.querySelector(".nav-list");
+const navListClone = navList.cloneNode(true);
+const siteMap = document.querySelector(".site-map");
+Array.from(navListClone.children).forEach((element) => {
+  siteMap.appendChild(element);
 });
