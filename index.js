@@ -10,7 +10,7 @@ let infoSection = document.querySelector(".info");
 let result = infoSection.children;
 
 Array.from(result).forEach((item) => {
-  //   console.log(item);
+  console.log(item);
   if (item.matches(".info-package")) {
     let title = document.querySelectorAll(".package-title").forEach((el) => {
       const previous = el.previousElementSibling;
@@ -32,4 +32,13 @@ label.forEach((item) => {
   } else {
     item.style.border = "solid 2px red";
   }
+});
+
+/////////////
+const navList = document.querySelector(".nav-list");
+const siteMap = document.querySelector(".site-map");
+
+// console.log(navList.children);
+Array.from(navList.children).forEach((item) => {
+  siteMap.appendChild(item);
 });
