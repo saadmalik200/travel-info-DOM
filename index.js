@@ -8,7 +8,7 @@ header.style.border = "5px solid black";
 let infoSection = document.querySelector(".info");
 
 let result = infoSection.children;
-
+console.log(result);
 Array.from(result).forEach((item) => {
   console.log(item);
   if (item.matches(".info-package")) {
@@ -19,6 +19,16 @@ Array.from(result).forEach((item) => {
     });
   }
 });
+// //task -2
+// const infoSection = document.querySelector(".info");
+// const packages = document.querySelector(".info-package");
+// const packageTitles = document.querySelectorAll(".package-title");
+// //console.log(packageTitles);
+// if (infoSection.contains(packages)) {
+//   packageTitles.forEach((title) => {
+//     title.previousElementSibling.style.border = "2px solid black";
+//   });
+// }
 
 /////////////////
 
